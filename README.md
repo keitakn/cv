@@ -215,7 +215,7 @@ Goは小さなアプリケーションには非常に有用な言語ですが、
 
 また [AWS AppSync](https://aws.amazon.com/jp/appsync/) 等のマネージドサービスが登場した事も理由の1つです。
 
-# Serverlessアーキテクチャ
+## Serverlessアーキテクチャ
 
 現時点では全てのシステムをServerlessアーキテクチャで運用するのは必ずしも適切ではないと考えます。
 
@@ -342,7 +342,7 @@ EC2で運用中のアプリケーションをFargateで動作するように改�
 
 - Java8(API サーバ)
 - Spring Framework4系
-- Ruby on Rails 4（新DMM会員管理サイト）
+- Ruby on Rails 4（管理サイト）
 - MySQL5.6
 - Couchbase3系（バックエンドのキャッシュサーバとして利用）
 - Redis ※APIが利用するメッセージングサーバとして利用
