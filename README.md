@@ -13,6 +13,7 @@
 |GitHub(Organization)|[nekonomokochan](https://github.com/nekonomokochan)|
 |GitHub(友人と共同で運営しているOrganization)|[nekochans](https://github.com/nekochans)|
 |Qiita|[keitakn](https://qiita.com/keitakn)|
+|Zenn|[keitakn](https://zenn.dev/keitakn)|
 |npm|[nekonomokochan](https://www.npmjs.com/~nekonomokochan)|
 |Packagist|[nekonomokochan](https://packagist.org/profile/)|
 |Speaker Deck|https://speakerdeck.com/keitakn|
@@ -196,7 +197,7 @@ AWSは2015年頃から積極的に利用しており、0から上記のサービ
 
 コンテナ技術との相性の良い点に魅力を感じています。
 
-現在個人プロダクトでGoを使った開発を行っているのと、とある案件でGoを使ったAPIの開発を予定しています。
+現在個人プロダクトでGoを使った開発を行っているのと、とある案件でGoを使ったAPIの開発を行っています。
 
 今後はgRPCやKubernetesと共に利用する案件があれば参加してみたいと考えています。
 
