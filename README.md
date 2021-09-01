@@ -178,14 +178,15 @@ AWSで利用した事があるサービス一覧です。
 | RDS                   |       A      | Multi-AZを意識した構成も構築した事があります。                                               |
 | DynamoDB              |       A      | Lambdaと合わせてAPIサーバのDBとして利用した事があります。                                    |
 | ElastiCache           |       A      | Laravel製のアプリケーションのキャッシュサーバとして利用しました。（Redisを利用）             |
-| Cognito               |       A      | UserPoolを用いて社内システムのユーザー基盤を構築しました。                                   |
+| Cognito               |       A      | UserPoolを用いて認証基盤を構築。社内向け、エンドユーザー向け、両方構築経験があります。          |
 | CloudFormation        |       B      | TerraformのほうがAWSの新機能への対応が早いので最近はあまり使っていません。                   |
 | X-Ray                 |       B      | サーバーレスアプリケーションの監視・分析に利用しました。                                     |
 | CodeDeploy            |       A      | EC2でのBlue/Greenデプロイの仕組みを構築した事があります。                                    |
 | CodeBuild             |       A      | ECRへのプッシュ等、様々な用途で利用しています。                                              |
 | Kinesis Data Firehose |       A      | アプリケーションログをS3バケットに転送する為に利用しました。                                 |
 | Athena                |       A      | Firehoseで集めたログをSQLで検索する為に利用しました。                                        |
-| EKS                   |       C      | 現在技術調査中。                                        |
+| EKS                   |       C      | マイクロサービスのアプリケーション基盤作成で利用しました。（それほど複雑な設定は行っていません）|
+| Rekognition           |       A      | 画像に不適切な物が写っていないか確認する際に利用しました。個人サービスでも利用しています。|
 
 
 VPCやCloudWatch等のAWSを利用すれば必ず利用するような物は含めておりません。
