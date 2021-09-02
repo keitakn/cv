@@ -239,7 +239,19 @@ Goは小さなアプリケーションには非常に有用な言語ですが、
 ## Next.js
 個人的にはVue.jsよりもReactのほうがTypeScriptの型システムの恩恵を受けやすい点（この点はVue.js3.0系でかなり改善されそうですが）やベストプラクティスを公式が積極的に情報発信している点などの理由で気に入っているのですが、Vue.jsベースのNuxt.jsのほうが機能が豊富でフレームワークとしての完成度は高いと思っていました。
 
-しかし最近はNext.jsが [動的ルーティング](https://nextjs-docs-ja.netlify.app/docs#%E5%8B%95%E7%9A%84%E3%81%AA%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0) や [API ルート](https://nextjs-docs-ja.netlify.app/docs#api-%E3%83%AB%E3%83%BC%E3%83%88) のサポートを追加した事等でNuxt.jsとの差が縮まっていると感じているので、注目しています。
+しかし最近は Next.js が以下のような新機能を追加した事等で Nuxt.js との差が縮まっていると感じているので、注目しています。
+
+- [動的ルーティング](https://nextjs-docs-ja.netlify.app/docs#%E5%8B%95%E7%9A%84%E3%81%AA%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
+- [API ルート](https://nextjs-docs-ja.netlify.app/docs#api-%E3%83%AB%E3%83%BC%E3%83%88)
+- [ISR(Incremental Static Regeneration)](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) のサポート
+
+特にISRは自分が関わっている多くのサービスの応答速度を改善出来る可能性を秘めているので、注目しています。
+
+友人と一緒に開発している個人サービス [LGTMeow](https://lgtmeow.com) でもNext.js で ISR を利用しています。
+
+↓がソースコードです。
+
+https://github.com/nekochans/lgtm-cat-frontend
 
 # 主な職務経歴
 
