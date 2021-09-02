@@ -255,7 +255,7 @@ https://github.com/nekochans/lgtm-cat-frontend
 
 # 主な職務経歴
 
-## 郵便番号から住所検索を行う事が出来るAPIの開発
+## 郵便番号から住所検索を行う事が出来るAPIの開発（2021）
 
 ### 業務概要
 
