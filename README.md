@@ -285,7 +285,7 @@ https://github.com/nekochans/lgtm-cat-frontend
 
 ### 主な成果
 
-Go + AWS Lambda で [ケンオール](https://kenall.jp/docs/) のAPIに通信を行い、住所情報を返すAPIを実装しました。
+Go + AWS Lambda で [ケンオール](https://kenall.jp/docs/) のAPIに通信を行い、住所情報を返すAPIを実装しました。
 
 住所検索APIとして [ケンオール](https://kenall.jp/docs/) は新しいサービスですが、APIインターフェースの設計が非常に優れていて、かつ低料金で利用出来るので、採用しました。
 
