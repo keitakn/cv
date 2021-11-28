@@ -261,6 +261,43 @@ https://github.com/nekochans/lgtm-cat-frontend
 
 # 主な職務経歴
 
+## メール送信を行う為のAPIの開発（2021）
+
+### 業務概要
+
+多くのサービスを運用しているクライアントで同じ内容のメール送信処理を複数のアプリケーションから行っており、メール文言の修正等でも複数箇所の修正が必要な状態でした。
+
+メール送信処理を一元化して管理しやすい状態にするのが目的です。
+
+### 利用した技術
+
+- Go
+- AWS Lambda
+- [SendGrid Web API v3](https://sendgrid.kke.co.jp/docs/API_Reference/Web_API_v3/index.html)
+- Serverless Framework
+- GitHub Actions
+- Terraform
+
+### プロジェクトの規模
+
+プロダクトマネージャー（1名）、自分（1名）の合計2名。
+
+### 主な成果
+
+郵便番号から住所検索を行うAPIと同じくAWS Lambdaを利用しました。
+
+メール送信用のサービスにはSendGridを利用しました。
+
+リリース前には [IPウォームアップ](https://sendgrid.kke.co.jp/docs/Tutorials/D_Improve_Deliverability/ip_warmup.html) を行い大量送信時にも送信遅延が発生しないように考慮し、独自ドメインからメール送信が出来る設定も追加しました。
+
+これにより以下の問題を解決する事が出来ました。
+
+- メール送信ロジックを一元管理出来るようになった
+- 元々SESを使っていたのだが、それに比べてメールの到達率が向上した
+- SendGridに変えた事によってバウンスメールの管理も容易になった
+
+試算だとこのままの事業成長を続けた場合、あと少しでLambdaの同時実行制限にかかってくる可能性が出てきました。その為、現在ははApp Runnerに移行しています。
+
 ## 郵便番号から住所検索を行う事が出来るAPIの開発（2021）
 
 ### 業務概要
