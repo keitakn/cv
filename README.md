@@ -274,21 +274,11 @@ AWSは2015年頃から積極的に利用しており、0から上記のサービ
 
 1度だけですが gRPC や Kubernetes と共に利用した事もあります。
 
-## Kotlin
+## gRPC
 
-Goは小さなアプリケーションには非常に有用な言語ですが、ある程度の規模だとモダンな言語仕様を持つ言語が有効だと考えます。
+一度GoでgRPCのアプリケーションを開発しましたが、Protocol Buffersによるコードの生成等、開発体験がとても快適でした。
 
-以下の理由からKotlinに注目しています。
-
-- Null安全、型推論等の最近のプログラミング言語のトレンドを抑えている
-- SpringBoot等の超有名どころのフレームワークがKotlinに正式対応した事
-- Scalaに比べて学習コストが低い印象でBetter Javaとしては今後こちらが伸びていきそうだから
-
-## GCP
-
-パブリッククラウドではAWSの1強だと思っていましたが、GKE等一部のサービスはAWSよりも使いやすい事や仕様が比較的シンプルなので、AWSの次に習得するべきクラウドだと考えています。
-
-個人開発で最近利用を初めたので少しずつですが、習熟度は上がっています。
+シンプルなUnaryRPCしか利用した事はないので、Server streaming RPC、Client streaming RPC、Bidirectional streaming RPCなどのStreamを利用したパターンも今後試してみたいです。
 
 ## GraphQL
 
@@ -323,6 +313,14 @@ Goは小さなアプリケーションには非常に有用な言語ですが、
 ↓がソースコードです。
 
 https://github.com/nekochans/lgtm-cat-frontend
+
+## エッジコンピューティング
+
+[Next.js 12から実装されたMiddleware](https://nextjs.org/docs/middleware) や [Remix](https://remix.run/) などエッジコンピューティングを利用した仕組みが登場しています。
+
+これらの仕組みを利用するとフロントエンドの大幅な高速化やABテスト等様々な利用用途が考えられるので、注目しています。
+
+友人と一緒に開発している個人サービス [LGTMeow](https://lgtmeow.com) でもNext.jsをVercel上で動作させているので、Next.jsに今後実装されるエッジコンピューティングを活用した仕組みを利用していきたいと考えています。
 
 # 主な職務経歴
 
