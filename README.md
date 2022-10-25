@@ -224,8 +224,6 @@ Server Componentやアイランドアーキテクチャなどの比較的新し�
 
 MySQLに関しては、現在においても最も重要なRDBMSだと思っているので、設計やパフォーマンスチューニングにはそれなりに拘りを持っています。
 
-※ DB設計に関する考えは [こちら](https://github.com/keitakn/web-developer-ojt/blob/master/docs/system-design/database.md) にまとまっています。
-
 ### Webサーバー
 
 | 名前   | スキルレベル | 備考                                                                                  |
