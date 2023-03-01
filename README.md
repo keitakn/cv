@@ -14,9 +14,6 @@
 |GitHub(友人と共同で運営しているOrganization)|[nekochans](https://github.com/nekochans)|
 |Qiita|[keitakn](https://qiita.com/keitakn)|
 |Zenn|[keitakn](https://zenn.dev/keitakn)|
-|npm|[nekonomokochan](https://www.npmjs.com/~nekonomokochan)|
-|Packagist|[nekonomokochan](https://packagist.org/profile/)|
-|Speaker Deck|https://speakerdeck.com/keitakn|
 
 # 得意な事
 
