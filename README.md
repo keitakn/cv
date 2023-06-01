@@ -10,7 +10,6 @@
 |Twitter|https://twitter.com/keita_kn_web|
 |Mail |keita.koga.work@gmail.com |
 |GitHub |[keitakn](https://github.com/keitakn) |
-|GitHub(Organization)|[nekonomokochan](https://github.com/nekonomokochan)|
 |GitHub(友人と共同で運営しているOrganization)|[nekochans](https://github.com/nekochans)|
 |Qiita|[keitakn](https://qiita.com/keitakn)|
 |Zenn|[keitakn](https://zenn.dev/keitakn)|
@@ -347,7 +346,7 @@ https://github.com/nekochans/lgtm-cat-frontend
 
 # 主な職務経歴
 
-## 大規模サービスの認証・認可基盤のリプレイス（2022-8月〜現在実施中）
+## 大規模サービスの認証・認可基盤のリプレイス（2022-8月〜2023年3月）
 
 ### 業務概要
 
@@ -369,6 +368,7 @@ https://github.com/nekochans/lgtm-cat-frontend
 - Prettier
 - Vercel
 - Authlete
+- Upstash
 
 ### プロジェクトの規模
 
@@ -387,7 +387,13 @@ https://github.com/nekochans/lgtm-cat-frontend
 
 その為、Edge MiddlewareやEdge API Routesを部分的に利用する事でレイテンシを抑える努力をしました。
 
-※ 現在対応中なのでリリースが完了したらより詳細な情報を記載します。
+結果としてSSR中心のアプリケーションながらUpstashとEdge API Routesで作成したBFF層を上手く活用する事でPageSpeed Insightsで80点付近を安定して出す事が出来るようになりました。
+
+また認証・認可のドメイン知識を整理した事で保守性が大幅に向上しました
+
+具体的には以前は週に2回デプロイするのがやっとな程の開発速度でしたが、1週間あたり平均して7回程デプロイされるように開発速度が改善しています。
+
+これによりABテストを積極的に回せるようになり、事業成長に貢献出来るシステム構成に改善されました。
 
 ## 医療系メディアアプリケーションのフロントエンドを Next.js を利用した形にリプレイス（2021〜2022）
 
