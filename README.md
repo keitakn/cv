@@ -145,6 +145,7 @@ https://github.com/keitakn/my-terraform
 | Ruby       |       A      | Ruby2.2、2.3の頃に利用していました、最近は利用していません。                              |
 | Java       |       B      | 保守案件でJava8 + Spring Frameworkの組み合わせで少し開発した程度。                        |
 | Scala      |       B      | PlayFramework2.4を少しだけ保守案件で触った程度、Gatlingでテストシナリオを書いていました。 |
+| Python     |       C      | 個人開発で利用中です。LLMの操作にLangChainがあると便利でPythonの情報量が最も多いので学習を開始しました。 |
 
 JavaScript（TypeScript）がもっとも経験が長いです。最新の仕様にも追従出来ております。
 
@@ -156,7 +157,10 @@ Rubyでもそこそこは戦えると自負しております。
 
 Java, Scalaに関しては、まだ経験不足なところが否めないと感じております。
 
-経験年数はあまり当てにならないと思いますので、私のGitHubを見て頂き、どの程度の技術力なのかを判断して頂くのが良いと思っております。
+Pythonは最近LLMの操作にLangChainがあると便利でPythonの情報量が最も多いので学習を開始しました。
+どこまで本格的に学ぶか分かりませんが今後LLMをアプリケーションに組み込んでいく流れになっていくと予想しているので、Pythonの習得は必須だと考えています。
+
+私のGitHubを見て頂き、どの程度の技術力なのかを判断して頂くのが良いと思っております。
 
 ### フレームワーク（バックエンド）
 
@@ -286,39 +290,6 @@ AWSは2015年頃から積極的に利用しており、0から上記のサービ
 
 # 今興味がある技術
 
-## Go
-
-コンテナ技術との相性の良い点に魅力を感じています。
-
-コンテナで動かすのが簡単でさらに言語の処理速度が高速なのでコンテナでアプリケーションを動かす事が多い現代には合っている言語だと感じています。
-
-最近はLambdaや簡単なWebAPIはGoで書いています。
-
-1度だけですが gRPC や Kubernetes と共に利用した事もあります。
-
-## gRPC
-
-一度GoでgRPCのアプリケーションを開発しましたが、Protocol Buffersによるコードの生成等、開発体験がとても快適でした。
-
-シンプルなUnaryRPCしか利用した事はないので、Server streaming RPC、Client streaming RPC、Bidirectional streaming RPCなどのStreamを利用したパターンも今後試してみたいです。
-
-## GraphQL
-
-フロントエンドをやっていた時にREAT APIとフロントエンドの連携部分で色々と試行錯誤をしていた中、[こちらのチュートリアル](https://www.howtographql.com/) をやった事で興味を持ちました。
-
-また [AWS AppSync](https://aws.amazon.com/jp/appsync/) 等のマネージドサービスが登場した事も理由の1つです。
-
-## Serverlessアーキテクチャ
-
-現時点では全てのシステムをServerlessアーキテクチャで運用するのは必ずしも適切ではないと考えます。
-
-しかし [Serverless Framework](https://serverless.com/) というOSSをメンテナンスしている人と関わりを持った事やこのOSSを使って開発をした際の開発体験の良さから今後伸びてくる分野だと思っています。
-
-## Kubernetes
-多くのパブリッククラウドがKubernetesのマネージドサービスに力を入れており、Kubernetesでアプリケーションを運用している前提で利用出来るOSSも増えて来ていると感じています。
-
-デプロイ、オートスケール等全てをKubernetesで完結出来るのと、今後のコンテナ実行環境のデファクトスタンダードになっていく感じがあるので現在注目しています。
-
 ## Next.js
 個人的にはVue.jsよりもReactのほうがTypeScriptの型システムの恩恵を受けやすい点（この点はVue.js3.0系でかなり改善されそうですが）やベストプラクティスを公式が積極的に情報発信している点などの理由で気に入っているのですが、Vue.jsベースのNuxt.jsのほうが機能が豊富でフレームワークとしての完成度は高いと思っていました。
 
@@ -343,6 +314,57 @@ https://github.com/nekochans/lgtm-cat-frontend
 これらの仕組みを利用するとフロントエンドの大幅な高速化やABテスト等様々な利用用途が考えられるので、注目しています。
 
 友人と一緒に開発している個人サービス [LGTMeow](https://lgtmeow.com) でもNext.jsをVercel上で動作させているので、Next.jsに今後実装されるエッジコンピューティングを活用した仕組みを利用していきたいと考えています。
+
+また今後はVercelのEdgeランタイムのようなNode.js以外のJSランタイムでも動作するコードを作成する事が必要になると感じています。
+
+その為 [Hono](https://hono.dev/) のような様々なJSランタイムで動作する軽量なフレームワークにも注目しています。
+
+## React Server Components
+
+Next.js 13.4からApp Routerが安定版となり React Server Components が利用出来るようになりました。
+
+https://nextjs.org/blog/next-13-4
+
+実際に試してみたところ、ダウンロードされるJSのサイズが大幅に削減されており、これを上手く使う事で動的コンテンツを中心に提供するようなサービスでもページスピードを大幅に改善出来る可能性がるので今後は React Server Components を上手くアプリケーションの設計に取り入れる事が必要だと感じています。
+
+以下で開発しているアプリケーションではApp Routerを採用しています。
+
+- [ねこの人格を持ったAIと会話ができるWebアプリケーションの作成](https://zenn.dev/keitakn/scraps/49eb2616e82eb9)
+
+ここからは余談ですが、友人と一緒に開発している個人サービス [LGTMeow](https://lgtmeow.com) もApp Routerに移行予定です。
+
+今後 React Server Components で動作しないCSS in JSは不利になっていくので CSS Modules への移行から進めています。
+
+- [styled-components で書かれたReactComponentPackageを CSS Modules に変更する](https://zenn.dev/keitakn/scraps/caf6c2b327a064)
+
+## LLM
+
+ChatGPTで使われているGPTのような大規模言語モデルをどうアプリケーションに組み込んで、どのような問題を解決出来るのか？を考える事に興味があります。
+
+特に [LangChain](https://langchain.com/) というライブラリを利用する事でLLMに様々なツールを与えたり、LLMのレスポンスを他のLLMに渡す事でより高度な回答を生成する事が可能なのでアプリケーションに組み込む事でユーザー体験を大幅に向上出来る可能性があると考えています。
+
+[LangChain](https://langchain.com/) は私が最も得意な言語である TypeScript で実装された [langchainjs](https://github.com/hwchase17/langchainjs) もありますがPython版のLangChainのほうが開発が活発だったり情報量も多いのでPythonの勉強をしながら空き時間でSlackbotを作ったり、オリジナルのアプリケーションの開発をしています。
+
+- [PythonでChatGPTのSlackbotを作る](https://zenn.dev/keitakn/scraps/fb037ce188cd5a)
+- [ねこの人格を持ったAIと会話ができるWebアプリケーションの作成](https://zenn.dev/keitakn/scraps/49eb2616e82eb9)
+
+業務ではChatGPTやGitHub Copilotを業務効率化に利用しています。
+
+## Go
+
+コンテナ技術との相性の良い点に魅力を感じています。
+
+コンテナで動かすのが簡単でさらに言語の処理速度が高速なのでコンテナでアプリケーションを動かす事が多い現代には合っている言語だと感じています。
+
+最近はLambdaや簡単なWebAPIはGoで書いています。
+
+1度だけですが gRPC や Kubernetes と共に利用した事もあります。
+
+## gRPC
+
+一度GoでgRPCのアプリケーションを開発しましたが、Protocol Buffersによるコードの生成等、開発体験がとても快適でした。
+
+シンプルなUnaryRPCしか利用した事はないので、Server streaming RPC、Client streaming RPC、Bidirectional streaming RPCなどのStreamを利用したパターンも今後試してみたいです。
 
 # 主な職務経歴
 
