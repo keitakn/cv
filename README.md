@@ -384,6 +384,10 @@ https://zenn.dev/keitakn/scraps/3fd37cb11321c2
 
 ### 利用した技術
 
+- Next.js 14系
+- Vercel
+- ESLint
+- Prettier
 - Python 3.12系
 - Rye（Pythonのpackage管理）
 - FastAPI 0.100系
