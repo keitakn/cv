@@ -394,7 +394,6 @@ https://zenn.dev/keitakn/scraps/3fd37cb11321c2
 - OpenAI API
 - Fly.io（APIサーバーとして利用）
 - Milvus（Zilliz Cloud）
-- LINE Messaging API
 
 ### プロジェクトの規模
 
