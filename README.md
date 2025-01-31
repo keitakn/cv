@@ -306,11 +306,15 @@ AWSは2015年頃から積極的に利用しており、0から上記のサービ
 
 ## LLM
 
-業務ではChatGPTやGitHub Copilotを業務効率化に利用しています。
+業務ではPerplexityのような検索AIやCursorのようなAI支援が強いIDEを積極的に活用して開発効率を向上させています。
 
 今まで解決出来なかった領域の問題解決が出来る可能性がある事からLLMを利用したアプリケーション開発に強い関心があり、2023年7月頃から実際に案件に参加するようになりました。
 
-OpenAI APIで実装されているtools（Function Calling等）と同様の機能がClaude 3でも実装された事から今後は各組織でAIエージェント的なシステムが構築されていくと予想しています。
+今最も興味がある技術はOpenAI Realtime APIやGemini 2.0 Multimodal Live API等のリアルタイム系のAPIになります。
+
+特にGemini 2.0 Multimodal Live APIはAIとの擬似的なビデオ通話が可能で大きな可能性を秘めていると感じています。
+
+https://github.com/keitakn/realtime-api-web-console
 
 ## Next.js
 
