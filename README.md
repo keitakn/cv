@@ -1,6 +1,10 @@
 # cv
 [keitakn](https://github.com/keitakn) の職務経歴、スキルシートです。
 
+生成AI・LLMを利用したプロダクト開発と、AIエージェントの利用を前提とした開発体制づくりを得意としています。
+
+2023年からLLMを利用した開発案件に参加し、直近の2年間はAIエージェント向けの開発基盤（ハーネス）の構築、MCPサーバーを含むバックエンド基盤の設計、AI駆動開発の導入支援を中心に仕事をしています。具体的な実績は [提供できること](#提供できること) と [主な職務経歴](#主な職務経歴) をご覧ください。
+
 ## 基本情報
 
 | key | value |
@@ -13,6 +17,18 @@
 |GitHub(友人と共同で運営しているOrganization)|[nekochans](https://github.com/nekochans)|
 |Qiita|[keitakn](https://qiita.com/keitakn)|
 |Zenn|[keitakn](https://zenn.dev/keitakn)|
+
+## 提供できること
+
+- AIエージェント、LLMを利用したアプリケーションの設計・開発
+  - LLMによる旅程生成機能や、観光スポットのデータを収集するAIエージェントなどの開発実績があります
+- AI駆動開発の導入支援
+  - AIエージェント向けのハーネス構築、コーディングルールやCIの整備を行い、2つの組織で開発体制の刷新を実施しました
+- MCPサーバーを含むバックエンド基盤、認証基盤の設計と刷新
+  - 直近では有効会員400万人以上のサービスの認証基盤移行を担当しています
+- ビジネス状況に合わせた技術選定、アーキテクチャ設計
+- 経営・事業の状況を踏まえた開発優先度の整理
+  - 現在参画中の企業では経営会議にも参加しています
 
 ## 得意な事
 
@@ -152,19 +168,19 @@ https://github.com/keitakn/my-terraform
 | Ruby       |       A      | Ruby2.2、2.3の頃に利用していました、最近は利用していません。                              |
 | Java       |       B      | 保守案件でJava8 + Spring Frameworkの組み合わせで少し開発した程度。                        |
 | Scala      |       B      | PlayFramework2.4を少しだけ保守案件で触った程度、Gatlingでテストシナリオを書いていました。 |
-| Python     |       A      | LLMの操作でPythonの情報量が最も多いので学習を開始しました。LLMを利用したアプリケーション開発で利用しています。 |
+| Python     |       S      | 2023年にLLMを利用した開発案件で使い始め、現在はバックエンドの主力言語です。FastAPIでの基盤刷新を1人で完遂した経験があります。 |
 
 JavaScript（TypeScript）がもっとも経験が長いです。最新の仕様にも追従出来ております。
 
 PHPはファーストキャリアから扱っている言語で5年ほど扱っていましたが、最近触っていないので、最新の仕様には疎いです。（7.3系あたりで知識が止まっています）
 
-最近、React、Next.jsでのフロントエンド開発やインフラ側のコードをAWS Lambdaで書く事が多いのでTypeScriptやGoを書く機会が一番多いです。
+最近はNext.js（App Router）を使った開発でTypeScriptを、バックエンドの基盤開発でPythonを書く機会が一番多いです。
 
 Rubyはそこそこ書けますが長い間書いていないので最新の仕様には疎いです。
 
 Java, Scalaに関しては、まだ経験不足なところが否めないと感じております。
 
-最近LLMを利用したアプリケーションの新規開発案件に参加しており、今バックエンドで一番触る機会が多い言語となっています。
+Pythonは2023年にLLMを利用した開発案件で使い始めましたが、今ではバックエンドで一番書く機会が多い言語になりました。
 
 私のGitHubを見て頂き、どの程度の技術力なのかを判断して頂くのが良いと思っております。
 
@@ -180,8 +196,8 @@ Java, Scalaに関しては、まだ経験不足なところが否めないと感
 | Sinatra          |       A      | 1から開発経験アリです。                                                                                  |
 | Spring Framework |       B      | 保守案件で少し触った程度で習熟度は高くありません。                                                       |
 | Play Framework   |       B      | 2.4系を少しだけ保守案件で触った程度で習熟度は高くありません。                                            |
-| Hono             |       A      | 個人開発で利用しました。                                            |
-| FastAPI          |       S      | 個人開発、LLMを使った開発案件で利用しました。最近はこれを触っています。                                            |
+| Hono             |       A      | 個人開発の他、業務でもバックエンドのアプリケーション層で利用しています。                                            |
+| FastAPI          |       S      | 業務でのバックエンド基盤の刷新で継続して利用しています。バックエンドをゼロから作る際の第一候補です。                                            |
 
 最近の自分の考えとしては、以下のような理由からバックエンドに関してはフルスタックなフレームワークを駆使してモノリシックなシステムを開発するより、[Hono](https://hono.dev/) のような薄いフレームワークとCloudflare Workersのようなサービスを使って小規模で疎結合なシステムを構築していくのが良いと考えています。
 
@@ -247,7 +263,7 @@ MySQLに関しては、現在においても最も重要なRDBMSだと思って�
 | 名前      | スキルレベル | 備考                                                                                   |
 |-----------|--------------|----------------------------------------------------------------------------------------|
 | Milvus(Zilliz Cloud)     |       B      | LLM案件で初めて利用したVectorDBです。 |
-| Pinecone                 |       C      | 。 |
+| Pinecone                 |       C      | 学習目的で触った程度で業務利用の経験はありません。 |
 
 
 業務経験があるのは Milvus(Zilliz Cloud) のみです。
@@ -304,75 +320,82 @@ AWSは2015年頃から積極的に利用しており、0から上記のサービ
 
 ## 今興味がある技術
 
-### LLM
+コーディングエージェントに関しては記載していません。
 
-業務ではPerplexityのような検索AIやCursorのようなAI支援が強いIDEを積極的に活用して開発効率を向上させています。
+コーディングエージェントが開発を行うように設計を行うのはもはや当たり前でコーディングエージェントのモデルの進化に一喜一憂する事は本質的ではないと考えているからです。
 
-今まで解決出来なかった領域の問題解決が出来る可能性がある事からLLMを利用したアプリケーション開発に強い関心があり、2023年7月頃から実際に案件に参加するようになりました。
+もちろんClaudeはMax (20x)に入っていますし、OpenAIも200$のプランに加入しているので常にフロンティアモデルで開発をしています。（費用は私自身が負担しています）
 
-今最も興味がある技術はOpenAI Realtime APIやGemini 2.0 Multimodal Live API等のリアルタイム系のAPIになります。
+私は安いモデルで工夫してどうにかするみたいなアプローチは採用しておりません。
 
-特にGemini 2.0 Multimodal Live APIはAIとの擬似的なビデオ通話が可能で大きな可能性を秘めていると感じています。
+開発においては成果物の品質が最も重要ですので、私の考えではモデルの費用を節約するよりも今の高性能モデルを使って改善を加速させる事が最も重要と考えています。
 
-https://github.com/keitakn/realtime-api-web-console
+### TanStack Start
 
-### Next.js
+https://tanstack.com/start/latest
 
-実はNext.jsは2017年頃に触っていたのですが、ISR(Incremental Static Regeneration が画期的な仕組みと考え注目し始めました。
+AIが生成するコード品質を優先して業務では Next.jsのApp Routerを使う事が多いのですが、
 
-特にISRは自分が関わっている多くのサービスの応答速度を改善出来る可能性を秘めているので、注目しています。
+TanStack Startは以下のような点が優れていると感じます。
 
-Next.js 13 からは React Server Components を利用可能なApp Routerが安定版になり、ますます重要な技術になったと感じています。
-
-個人サービス [LGTMeow](https://lgtmeow.com) もApp Routerを使った構成に乗り換えました。
-
-https://github.com/nekochans/lgtm-cat-frontend
-
-ただし [Vercel](https://vercel.com/docs) を採用出来ない場合インフラ構築コストや運用コストが大幅に増えてしまうので、その場合は [Remix](https://remix.run) のようなシンプルなフレームワークを採用するのが良いと思います。 
-
-### エッジコンピューティング
-
-[Next.js 12から実装されたMiddleware](https://nextjs.org/docs/middleware) や [Remix](https://remix.run/) などエッジコンピューティングを利用した仕組みが登場しています。
-
-これらの仕組みを利用するとフロントエンドの大幅な高速化やABテスト等様々な利用用途が考えられるので、注目しています。
-
-また今後はVercelのEdgeランタイムのようなNode.js以外のJSランタイムでも動作するコードを作成する事が必要になると感じています。
-
-その為 [Hono](https://hono.dev/) のような様々なJSランタイムで動作する軽量なフレームワークにも注目しています。
-
-友人と一緒に開発している個人サービス [LGTMeow](https://lgtmeow.com) でもNext.jsをVercel上で動作させているので、BFF層をEdge Runtimeで実装しています。
+- ルーティングからサーバー関数まで型安全に書ける事
+- Next.jsに比べて色々なプラットフォームで動作させる事が容易
 
 ### Cloudflare
 
-CDNの提供やDDoS対策だけでなく、Cloudflare Workersのような高性能なServerlessプラットフォームやD1のようなデータベースも安定版になり、AWSの代わりに利用するような機会が増えるのでは？と予想しています。
+Cloudflareには未来があると感じています。
 
-自分が最近最も注目しているのは以下の記事です。
+Durable Objects（オブジェクト毎に専用のSQLiteデータベースを持てる仕組み）などの便利な仕組みがあります。
 
-https://blog.cloudflare.com/python-workers
+WebSocketのHibernation APIと組み合わせるとリアルタイム通信を安価に実装出来たり、将来的にどこかで採用する機会があれば採用したいと考えています。
 
-PythonがCloudflare Workersに正式対応した事によりAIアプリケーションとの相性がますます良くなったと感じています。
+https://developers.cloudflare.com/durable-objects/
 
-バックエンド開発のトレンドもコンテナの次にWASI（Web Assembly System Interface）が主流になる可能性もあるので、これらをサポートしているという点も注目ポイントです。
+### Hermes Agent
 
-### React Server Components
+https://hermes-agent.org/
 
-Next.js 13.4からApp Routerが安定版となり React Server Components が利用出来るようになりました。
+以前実験的に導入した事があってその際は結局不採用になりましたが、基本的に育てていくAIエージェントとしてはこれが一番筋がいいと思っています。
 
-https://nextjs.org/blog/next-13-4
+普段から自分の雑務等はAIエージェント向けのエージェントスキルとして作り込んでいるので将来的には Hermes Agent に任せられないかを考えています。
 
-実際に試してみたところ、ダウンロードされるJSのサイズが大幅に削減されており、これを上手く使う事で動的コンテンツを中心に提供するようなサービスでもページスピードを大幅に改善出来る可能性がるので今後は React Server Components を上手くアプリケーションの設計に取り入れる事が必要だと感じています。
+ちなみに以下のようなマネージドサービスがあります。まずは個人開発で運用している [LGTMeow](https://lgtmeow.com) の裏側の業務から徐々に移行しようと思います。
 
-以下で開発しているアプリケーションではApp Routerを採用しています。
+https://hivra.cloud
 
-- [ねこの人格を持ったAIと会話ができるWebアプリケーションの作成](https://zenn.dev/keitakn/scraps/49eb2616e82eb9)
+### Vercel
 
-### Supabase
+最近Dockerfileを書けばバックエンドのコンテナも動作するようになりさらに便利になりました。
 
-安価で利用可能でさらに東京リージョンがあるのでレイテンシの面でも問題なく利用可能なPostgreSQL付きの認証基盤です。
+Mastraも裏側でVercel AI SDKを使っているので、AI周りも強いのでやっぱりNext.jsを運用するならVercelかなーと思ってます。
 
-https://zenn.dev/keitakn/scraps/3fd37cb11321c2
+ちなみに個人開発で運用している [LGTMeow](https://lgtmeow.com) はVercelです。
 
-認証機能を素早く提供可能でRDBのPostgreSQLも利用可能なので自分的には認証基盤のファーストチョイスになる選択だと考えています。
+最近出た eve も楽しみですね。
+
+https://vercel.com/blog/introducing-eve
+
+### Turso
+
+https://turso.tech
+
+課金すればDBの作成数に制限がないので、マルチテナントでDBを安全に分割出来るアーキテクチャが現実になってきたなと感じます。
+
+このサービスとCloudflareのD1がSQLiteをProduction Readyにしたなと感じています。
+
+ちなみに個人開発で運用している [LGTMeow](https://lgtmeow.com) の認証用のDBはTursoです。
+
+### 音声・ビデオ会話が出来るリアルタイムAI
+
+OpenAIのRealtime APIやGeminiのLive APIのような、音声や映像を使ってリアルタイムにAIと会話する為のAPIに興味があります。
+
+https://aistudio.google.com/live-api
+
+以前、GeminiのLive APIでAIと擬似的なビデオ通話が出来るアプリケーションを作りました。（大分古いのでもう動かないです）
+
+https://github.com/keitakn/realtime-api-web-console
+
+私は将来的に自分の分身のAIがビデオ会議等に参加してきて欲しいなと考えていたりするのでリアルタイムでのビデオ通話や音声通話の分野は興味あります。
 
 ## 主な職務経歴
 
