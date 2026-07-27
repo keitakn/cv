@@ -348,8 +348,6 @@ LaravelとNuxt.jsで出来たサービスをNext.jsのApp Routerを用いた形�
 
 [Ultracite](https://www.ultracite.ai/) 等のAI用のルールが含まれたLinterの採用等、テストケース毎にDBを作成する等の工夫を行いCIの実行時間が長くならないようにしました。
 
-例によってAI中心で開発を進めて行けるように
-
 Tailwind CSS 4系やNext.js 16系はAIが対象バージョンの知識を持っておらず古いコードを書いてしまう問題がありましたが、そのあたりのコーディングルールを整備したりLinterによるルール縛りを行う事で最新のNext.jsのApp Routerに最適なコードが生成される土台を整備する事にしました。
 
 ちなみにORMのPrismaですが私の中では現在は [Drizzle ORM](https://orm.drizzle.team/) のほうが型安全性やシンプルさでAIが生成するコードが安定しやすいので推奨はDrizzle ORMでしたが、組織のエンジニアの習熟度も考慮して最終的にはPrismaを選択しました。
