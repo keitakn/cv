@@ -124,7 +124,7 @@ AWSリソースはTerraformで構成管理を行い、[AWS Well-Architected フ�
 | FastAPI | 業務でのバックエンド基盤の刷新で継続して利用しています。バックエンドをゼロから作る際の第一候補です。 |
 | Hono | 個人開発の他、業務でもバックエンドのアプリケーション層で利用しています。 |
 | MySQL | 設計からパフォーマンスチューニングまで対応出来ます。最近はPlanetScaleのようなDBaaS上で利用する事が多いです。 |
-| Terraform | AWSの構成管理でよく利用しています。 |
+| Terraform | AWSやGoogle Cloudの構成管理でよく利用しています。 |
 | GitHub Actions | CI・CDの構築で利用しています。開発の初期段階からCI/CDを整備する事を重視しています。 |
 
 ### 過去に経験した技術
@@ -132,6 +132,8 @@ AWSリソースはTerraformで構成管理を行い、[AWS Well-Architected フ�
 キャリアの前半はPHP（Laravel、FuelPHP等）を5年ほど、その後はGo、Ruby（Ruby on Rails）、Node.js（Express）等でバックエンドの開発を行ってきました。JavaやScalaも保守案件で触った経験があります。
 
 AWSは2015年頃から利用しており、EC2、ECS、AWS Lambda等を組み合わせてゼロからインフラ全体（Webアプリケーションも含む）を構築した経験があります。CognitoやDynamoDBを使った認証・認可基盤の構築、Kinesis Data FirehoseとAthenaを使ったログ基盤の構築なども行いました。具体的にどの案件で何を使ったかは [主な職務経歴](#主な職務経歴) をご覧ください。
+
+Google Cloudは株式会社Algomaticの案件で利用しました。にじチャットで、REST APIをCloud Runで動かす為のインフラをTerraformで構築しています。構成はGoogleが公開しているベストプラクティスに沿った形にしました。
 
 PostgreSQLはにじボイス、にじチャットで利用しました。認証基盤にSupabaseを採用した為、RDBもSupabaseに付属するPostgreSQLをそのまま利用する構成にしました。
 
